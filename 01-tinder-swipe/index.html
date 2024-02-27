@@ -259,6 +259,7 @@
     if (isAnimating) return
     // get de first article element
     const actualCard = e.target.closest('article')
+    if (!actualCard) return
     //get initial position of mouse or finger
     const startX = e.pageX ?? event.touches[0].pageX
     if (!actualCard) return
